@@ -598,8 +598,15 @@ RESPONSIVE DESIGN
     justify-content:center;  
 }  
 
-.nav-links{  
-    display:none;  
+@media(max-width:992px){
+
+.nav-links{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 }
 
 }
@@ -860,6 +867,36 @@ section{
 
 .resume-btn{
     display:none;
+}
+
+}
+.menu-toggle{
+    display:none;
+    font-size:2rem;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media(max-width:992px){
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 0;
+    display:none;
+}
+
+.nav-links.active{
+    display:flex;
 }
 
 }
