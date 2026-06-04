@@ -503,3 +503,40 @@ letter-spacing:1px;
 .btn-primary,.btn-secondary{padding:10px 18px;font-size:14px;}
 .project-buttons{flex-direction:column;}
     }
+.stats{
+    background:#111;
+    text-align:center;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    max-width:900px;
+    margin:auto;
+}
+
+.stat h3{
+    font-size:3rem;
+    color:#ff69b4;
+}
+
+.stat p{
+    color:#d3d3d3;
+}
+
+body.light{
+    background:#f5f5f5;
+    color:#111;
+}
+
+body.light .navbar{
+    background:#ffffff;
+}
+
+body.light .project-card,
+body.light .education-card,
+body.light .certificate-card{
+    background:#fff;
+    color:#111;
+}
