@@ -232,3 +232,30 @@ CONSOLE MESSAGE
 =========================== */
 
 console.log("Portfolio Loaded Successfully 🚀");
+
+/* Live Clock */
+
+function updateClock() {
+    const now = new Date();
+
+    document.getElementById("clock").innerHTML =
+        now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
+/* Dark Light Mode */
+
+const themeBtn =
+    document.querySelector(".theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    themeBtn.innerHTML =
+        document.body.classList.contains("light-mode")
+        ? "☀️"
+        : "🌙";
+});
