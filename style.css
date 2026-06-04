@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+9@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 *{
 margin:0;
 padding:0;
@@ -163,7 +163,7 @@ width:90%;
 width:85%;
 }
 .javascript{
-width:75%;
+width:85%;
 }
 .python{
 width:80%;
@@ -171,10 +171,10 @@ width:80%;
 .java{
 width:75%;
 }
-.cpp{
-width:50%;
+.power{
+width:80%;
 }
-.mysql{
+.sql{
 width:85%;
 }
 .education{
