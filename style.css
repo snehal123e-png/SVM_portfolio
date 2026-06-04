@@ -62,6 +62,25 @@ justify-content:space-between;
 align-items:center;
 padding:0 8%;
 }
+.live-info{
+    color:#ccc;
+    font-size:14px;
+    margin-left:20px;
+}
+
+.theme-toggle{
+    background:none;
+    border:1px solid #ff69b4;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.theme-toggle:hover{
+    background:#ff69b4;
+}
 .logo{
 font-size:1.8rem;
 font-weight:800;
@@ -405,6 +424,25 @@ to{
 opacity:1;
 transform:translateY(0);
 }
+}
+.light-mode{
+    background:#ffffff;
+    color:#111;
+}
+
+.light-mode .navbar,
+.light-mode .about,
+.light-mode .education,
+.light-mode .certificates,
+.light-mode footer{
+    background:#f5f5f5;
+}
+
+.light-mode .project-card,
+.light-mode .certificate-card,
+.light-mode .education-card{
+    background:#ffffff;
+    color:#111;
 }
 @media(min-width:1440px){
 .hero-content h1{font-size:6rem;}
