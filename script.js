@@ -155,11 +155,11 @@ function animateSkills() {
 
                 if (bar.classList.contains("html")) bar.style.width = "90%";
                 if (bar.classList.contains("css")) bar.style.width = "85%";
-                if (bar.classList.contains("javascript")) bar.style.width = "75%";
+                if (bar.classList.contains("javascript")) bar.style.width = "85%";
                 if (bar.classList.contains("python")) bar.style.width = "80%";
                 if (bar.classList.contains("java")) bar.style.width = "75%";
-                if (bar.classList.contains("cpp")) bar.style.width = "80%";
-                if (bar.classList.contains("mysql")) bar.style.width = "75%";
+                if (bar.classList.contains("power")) bar.style.width = "80%";
+                if (bar.classList.contains("sql")) bar.style.width = "75%";
 
             }, 300);
         }
