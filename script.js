@@ -233,29 +233,82 @@ CONSOLE MESSAGE
 
 console.log("Portfolio Loaded Successfully 🚀");
 
+/* Achievement Counter */
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+
+        const target =
+            +counter.getAttribute("data-target");
+
+        const current =
+            +counter.innerText;
+
+        const increment = target / 100;
+
+        if(current < target){
+
+            counter.innerText =
+                Math.ceil(current + increment);
+
+            setTimeout(updateCounter,20);
+
+        }else{
+
+            counter.innerText = target + "+";
+
+        }
+
+    };
+
+    updateCounter();
+
+});
+
+
 /* Live Clock */
 
-function updateClock() {
-    const now = new Date();
+function updateClock(){
 
-    document.getElementById("clock").innerHTML =
-        now.toLocaleTimeString();
+    const clock =
+        document.getElementById("clock");
+
+    if(clock){
+
+        const now = new Date();
+
+        clock.innerText =
+            now.toLocaleTimeString();
+
+    }
+
 }
 
-setInterval(updateClock, 1000);
+setInterval(updateClock,1000);
 updateClock();
 
-/* Dark Light Mode */
+
+/* Dark / Light Mode */
 
 const themeBtn =
     document.querySelector(".theme-toggle");
 
-themeBtn.addEventListener("click", () => {
+if(themeBtn){
 
-    document.body.classList.toggle("light-mode");
+    themeBtn.addEventListener("click",()=>{
 
-    themeBtn.innerHTML =
-        document.body.classList.contains("light-mode")
-        ? "☀️"
-        : "🌙";
-});
+        document.body.classList.toggle("light");
+
+        themeBtn.innerHTML =
+            document.body.classList.contains("light")
+            ? "☀️"
+            : "🌙";
+
+    });
+
+}
