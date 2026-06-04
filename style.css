@@ -151,10 +151,12 @@ background:#222;
 border-radius:20px;
 overflow:hidden;
 }
-.progress-bar{
-height:100%;
-border-radius:20px;
-background:linear-gradient(90deg,#ff69b4,#ffb6c1);
+.progress-bar {
+    height: 100%;
+    width: 0;   /* IMPORTANT */
+    border-radius: 20px;
+    background: linear-gradient(90deg,#ff69b4,#ffb6c1);
+    transition: width 1s ease;
 }
 .html{
 width:90%;
